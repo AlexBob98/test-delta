@@ -1,0 +1,279 @@
+.crossplatform {
+  margin-top: 3em;
+  padding-bottom: 2.7em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(227, 239, 255, 0.18) 0%,
+      rgba(118, 167, 241, 0.18) 50%,
+      rgba(5, 95, 229, 0.18) 100%
+    ),
+    url(../images/crossplatform-background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    background: rgba(255, 255, 255, 0.64);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__title,
+  &__content {
+    z-index: 1;
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 5em;
+
+
+
+  }
+
+  &__item {
+    margin-bottom: 5em;
+    display: flex;
+    align-items: center;
+  }
+
+  &__label {
+    flex-basis: 13.5%;
+    display: flex;
+
+    &::before {
+      content: "";
+      border-left: 4px solid var(--primary-transparent-35);
+      padding-right: 0.4em;
+    }
+  }
+
+  &__logos {
+    height: 100px;
+    border-radius: 8px;
+    background: var(--white-transparent-35);
+    padding: 32px;
+    border: 1px solid var(--white-transparent-35);
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 2.5em;
+    }
+  }
+
+  &__formats {
+    display: flex;
+    gap: 1.6em;
+
+    & span {
+      position: absolute;
+      left: 16px;
+      bottom: 22px;
+    }
+  }
+
+  &__logo {
+    object-fit: contain;
+
+    &.windows-logo {
+      width: 295px;
+    }
+    &.linux {
+      width: 176px;
+    }
+  }
+
+  &__formats-scroll {
+    overflow: hidden;
+    cursor: grab;
+    transition: transform 0.5s ease;
+    right: -45px;
+    position: relative;
+
+    & .crossplatform__format-logo {
+      display: inline-block;
+      width: 50px;
+      height: auto;
+      margin-right: 10px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      &.zip {
+        & span {
+          position: absolute;
+          left: 23px;
+          bottom: 12px;
+        }
+      }
+    }
+  }
+
+  .crossplatform__format-logo {
+    position: relative;
+    min-width: 100px;
+    height: 100px;
+    border: 1px solid var(--white-transparent-35);
+    border-radius: 8px;
+
+    &.unzip-zip {
+      background: url(../images/crossplatform/folder.png) center no-repeat;
+      background-color: var(--white-transparent-35);
+    }
+    &.zip {
+      background: url(../images/crossplatform/zip.png) center no-repeat;
+      background-color: var(--white-transparent-35);
+    }
+
+    & span {
+      position: absolute;
+      left: 16px;
+      bottom: 22px;
+      user-select: none;
+    }
+  }
+
+  &__format-logo-zip-container {
+    display: flex;
+    gap: 1em;
+    height: 100px;
+    transition: transform 0.5s ease-in-out;
+  }
+}
+
+@media (max-width: 1920px) {
+  .crossplatform__title {
+    padding: 2em 6em;
+  }
+  .crossplatform__label {
+    text-align: left;
+  }
+  .crossplatform__content {
+    padding: 0 4em;
+  }
+}
+@media (max-width: 1440px) {
+  .crossplatform {
+    margin-top: 9.3em;
+  }
+  .crossplatform__title {
+    padding: 3em 6em 1.6em 6em;
+  }
+
+  .crossplatform__content {
+    padding-left: 5.3em;
+  }
+}
+
+@media (max-width: 800px) {
+  .crossplatform__title {
+    padding: 1.5em 4em;
+  }
+
+  .crossplatform__content {
+    flex-direction: column;
+    padding: 0 2em;
+  }
+  .crossplatform__info {
+    display: flex;
+    flex-direction: column;
+  }
+  .crossplatform__item {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 3em;
+  }
+  .crossplatform__item.platform {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .crossplatform__label {
+    flex-basis: 100%;
+    margin-bottom: 1em;
+  }
+
+  .crossplatform__logos {
+    flex-direction: row;
+    justify-content: center;
+    &:not(:last-child) {
+      margin-right: 1em;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .crossplatform__title {
+    padding: 1em 2em;
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+  .crossplatform__logos {
+    width: 440px;
+  }
+  .crossplatform__info p {
+    font-size: 1em;
+    width: 440px;
+    line-height: 1.5em;
+  }
+  .crossplatform__item.platform {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .crossplatform__formats {
+    flex-direction: row;
+    gap: 2em;
+    flex-wrap: wrap;
+    width: 440px;
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .crossplatform__title {
+    padding: 1em 2em;
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+
+  .crossplatform__content {
+    padding: 0 1em;
+  }
+
+  .crossplatform__item {
+    margin-bottom: 2em;
+  }
+  .crossplatform__info p {
+    font-size: 1em;
+    width: 280px;
+    line-height: 1.5em;
+  }
+  .crossplatform__formats-scroll {
+    right: 0px;
+  }
+  .crossplatform__item.platform {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .crossplatform__logos {
+    width: 270px;
+  }
+  .crossplatform__formats {
+    flex-direction: row;
+    gap: 2em;
+    flex-wrap: wrap;
+    width: 280px;
+    justify-content: center;
+  }
+}

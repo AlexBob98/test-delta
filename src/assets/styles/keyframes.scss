@@ -1,0 +1,51 @@
+@keyframes backgroundSlide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes loading {
+  0% {
+    background: conic-gradient(#3498db 0%, transparent 0%);
+  }
+  100% {
+    background: conic-gradient(#3498db 100%, transparent 0%);
+  }
+}
+@keyframes fill {
+  0% {
+    stroke-dashoffset: 283;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.description__text,
+#description-image {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
