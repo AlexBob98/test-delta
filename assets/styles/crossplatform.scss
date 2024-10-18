@@ -240,7 +240,30 @@
     justify-content: center;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
+  .crossplatform__logos {
+    width: 460px;
+  }
+}
+@media (max-width: 500px) {
+  .crossplatform__logos {
+    width: 400px;
+  }
+}
+@media (max-width: 490px) {
+  .crossplatform__logos {
+    width: 390px;
+  }
+  .crossplatform__formats {
+    width: 320px;
+  }
+}
+@media (max-width: 375px) {
+  .crossplatform__logos {
+    width: 320px;
+  }
+}
+@media (max-width: 374px) {
   .crossplatform__title {
     padding: 1em 2em;
     font-size: 1.2em;
