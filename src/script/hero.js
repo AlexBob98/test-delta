@@ -51,14 +51,14 @@ document.addEventListener("DOMContentLoaded", () => {
             distance * Math.sin(angle * (Math.PI / 180)) * (index + 1);
           card.style.transform = `translate(${translateX}px, - ${translateY}px)`;
           card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
-        }, index * 1500);
+        }, index * 600);
       });
 
       setTimeout(() => {
         folder.style.transform = currentSettings.folderValue;
         folder.style.opacity = "1";
         folder.style.transition = "opacity 1s ease";
-      }, 1500);
+      }, 2000);
     }, 1500);
   }, 600);
 });
