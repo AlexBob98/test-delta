@@ -30,6 +30,15 @@ let currentFeature = 0;
 const description = document.getElementById("description");
 const descriptionImage = document.getElementById("description-image");
 
+const loaderSVG = `
+<svg class="my-loader" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path fill="none" stroke-linecap="round" stroke-width="6" stroke="#CDDEF9" stroke-dasharray="251.2,0" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"/>
+  <path fill="none" stroke-linecap="round" stroke-width="6" stroke="#055fe5" stroke-dasharray="251.2,0" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80">
+    <animate id="loader-svg" attributeName="stroke-dasharray" from="0,251.2" to="251.2,0" dur="3s"/>
+  </path>
+</svg>
+`;
+
 function updateFeature() {
   const featureItems = document.querySelectorAll(".features__item");
 
@@ -37,25 +46,29 @@ function updateFeature() {
     item.classList.remove("active");
     const children = item.children;
 
-    if (children.length > 0) {
-      children[0].classList.remove("loader");
+    const loaderElement = children[0].querySelector(".my-loader");
+
+    description.classList.add("fade-out");
+    descriptionImage.classList.add("fade-out");
+
+    setTimeout(() => {
+      description.innerHTML = `<p class="description__text text-20-r">${features[currentFeature].text}</p>`;
+      descriptionImage.src = features[currentFeature].image;
+
+      description.classList.remove("fade-out");
+      descriptionImage.classList.remove("fade-out");
+    }, 500);
+
+    if (loaderElement) {
+      loaderElement.remove();
     }
 
     if (index === currentFeature && children.length > 0) {
       children[0].classList.add("loader");
+      children[0].insertAdjacentHTML("afterbegin", loaderSVG);
       item.classList.add("active");
     }
   });
-  description.classList.add("fade-out");
-  descriptionImage.classList.add("fade-out");
-
-  setTimeout(() => {
-    description.innerHTML = `<p class="description__text text-20-r">${features[currentFeature].text}</p>`;
-    descriptionImage.src = features[currentFeature].image;
-
-    description.classList.remove("fade-out");
-    descriptionImage.classList.remove("fade-out");
-  }, 500);
 
   currentFeature = (currentFeature + 1) % features.length;
 
