@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-zip Landing TEST</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="header" class="header">
+        <div class="header__logo logo-img"></div>
+        <div class="header__right">
+          <nav class="header__nav">
+            <button class="header__burger" aria-label="Меню">
+              <span class="header__burger-line"></span>
+              <span class="header__burger-line"></span>
+              <span class="header__burger-line"></span>
+            </button>
+            <ul class="header__menu">
+              <li class="header__item">
+                <a class="header__link text-16-b" href="#">О программе</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link text-16-b" href="#">Функции</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link text-16-b" href="#">Поддержка</a>
+              </li>
+              <li class="header__item">
+                <button class="header__install-button">
+                  <span class="text-16-b">Установить 7-zip</span>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="hero">
+          <div class="hero__content">
+            <div class="hero__text-section">
+              <h1 class="hero__title">7-Zip</h1>
+              <span class="hero__subtitle text-30-m"
+                >Идеальный инструмент для архивации</span
+              >
+              <p class="hero__description text-26-r">
+                Надёжное сжатие, шифрование и управление файлами
+              </p>
+              <button class="hero__btn main-button">
+                <img src="./assets/icons/window-logo.svg" alt="Test SVG">
+                <span class="text-20-b window">Скачать для Windows</span>
+              </button>
+              <p class="hero__download-text text-14-r">
+                Совместим с Windows XP и выше
+              </p>
+            </div>
+            <div class="hero__animation-section">
+              <div class="hero__program-window">
+                <div class="hero__laptop">
+                  <div class="hero__card hero__card--1"></div>
+                  <div class="hero__card hero__card--2"></div>
+                  <div class="hero__card hero__card--3"></div>
+                </div>
+              </div>
+              <div class="hero__folder"></div>
+            </div>
+          </div>
+        </section>
+        <section class="benefits">
+          <h2 class="title">Ваш надёжный компаньон в мире архивов</h2>
+          <div class="content">
+            <div class="column column--left">
+              <div class="logo-list">
+                <ul class="features">
+                  <li class="features__item">
+                    <span class="features__icon">
+                      <img
+                        src="./assets/icons/benefits/1.png"
+                        alt="Логотип"
+                        class="features__icon-image"
+                      >
+                    </span>
+                    <span class="text-24-m">Открытый исходный код</span>
+                  </li>
+                  <li class="features__item">
+                    <span class="features__icon">
+                      <img
+                        src="./assets/icons/benefits/2.png"
+                        alt="Логотип"
+                        class="features__icon-image"
+                      >
+                      <span class="text-24-m">Высокая степень сжатия</span>
+                    </span>
+                  </li>
+                  <li class="features__item">
+                    <span class="features__icon">
+                      <img
+                        src="./assets/icons/benefits/3.png"
+                        alt="Логотип"
+                        class="features__icon-image"
+                      >
+                      <span class="text-24-m">Надёжное шифрование</span>
+                    </span>
+                  </li>
+                  <li class="features__item">
+                    <span class="features__icon">
+                      <img
+                        src="./assets/icons/benefits/4.png"
+                        alt="Логотип"
+                        class="features__icon-image"
+                      >
+                      <span class="text-24-m">Многопоточное сжатие файлов</span>
+                    </span>
+                  </li>
+                  <li class="features__item">
+                    <span class="features__icon">
+                      <img
+                        src="./assets/icons/benefits/5.png"
+                        alt="Логотип"
+                        class="features__icon-image"
+                      >
+                      <span class="text-24-m">Тестирования архивов</span>
+                    </span>
+                  </li>
+                  <li class="features__item">
+                    <span class="features__icon">
+                      <img
+                        src="./assets/icons/benefits/6.png"
+                        alt="Логотип"
+                        class="features__icon-image"
+                      >
+                      <span class="text-24-m">Русскоязычный интерфейс</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="column column--right">
+              <div class="description" id="description">
+                <p class="description__text text-20-r">
+                  Программа основана на открытом исходном коде, что позволяет
+                  пользователям убедиться в её надёжности и безопасности.
+                </p>
+              </div>
+              <img
+                src="../assets/images/benefits/7.png"
+                alt="Описание"
+                class="description__image"
+                id="description-image"
+              >
+            </div>
+          </div>
+        </section>
+        <section class="crossplatform">
+          <h2 class="crossplatform__title">
+            Кроссплатформенность и работа с форматами
+          </h2>
+          <div class="crossplatform__content">
+            <div class="crossplatform__info">
+              <div class="crossplatform__item platform">
+                <p class="crossplatform__label text-28-m">Совместим с платформами:</p>
+                <div class="crossplatform__logos">
+                  <img
+                  src="./assets/images/crossplatform/mac-os.png"
+                  alt="macOS"
+                  class="mac-os"
+                >  
+                </div>
+                <div class="crossplatform__logos"><img
+                  src="./assets/images/crossplatform/windows.png"
+                  alt="Windows"
+                  class="windows-logo"
+                ></div>
+                <div class="crossplatform__logos">
+                  <img
+                    src="./assets/images/crossplatform/linux.png"
+                    alt="Linux"
+                    class="linux"
+                  >
+                </div>
+              </div>
+              <div class="crossplatform__item">
+                <p class="crossplatform__label text-28-m">
+                  Форматы, которые 7-Zip может запаковывать и распаковать:
+                </p>
+                <div class="crossplatform__formats">
+                  <div class="crossplatform__format-logo unzip-zip"><span class="text-20-b">7z</span></div>
+                  <div class="crossplatform__format-logo unzip-zip"><span class="text-20-b">ZIP</span></div>
+                  <div class="crossplatform__format-logo unzip-zip"><span class="text-20-b">WIM</span></div>
+                  <div class="crossplatform__format-logo unzip-zip"><span class="text-20-b">XZ</span></div>
+                  <div class="crossplatform__format-logo unzip-zip"><span class="text-20-b">GZIP</span></div>
+                  <div class="crossplatform__format-logo unzip-zip"><span class="text-20-b">TAR</span></div>
+                </div>
+              </div>
+              <div class="crossplatform__item">
+                <p class="crossplatform__label scroll text-28-m">
+                  Форматы, которые 7-Zip может распаковать:
+                </p>
+                <div class="crossplatform__formats-scroll">
+                  <div class="crossplatform__format-logo-zip-container">
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">APFS</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">AR</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">ARJ</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">CAB</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">CHM</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">CPIO</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">CramFS</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">DMG</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">EXT</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">FAT</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">GPT</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">HFS</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">IHEX</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">ISO</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">LZH</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">LZMA</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">MBR</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">MSI</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">NSIS</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">NTFS</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">QCOW2</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">RAR</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">RPM</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">UDF</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">UEFI</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">VDI</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">VHD</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">VHDX</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">VMDK</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">XAR</span></div>
+                  <div class="crossplatform__format-logo zip"><span class="text-20-b">Z</span></div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="faq">
+          <h2 class="faq__title">Отвечаем на часто задаваемые вопросы</h2>
+          <div class="faq__container">
+            <div class="faq__list faq__list--left">
+              <div class="faq__item">
+                <button class="faq__question text-20-sb">Могу ли я использовать 7–Zip в коммерческой организации?</button>
+                <div class="faq__answer text-18-m">Да, 7–Zip является свободным программным обеспечением, которое можно использовать на любом компьютере. Вам не нужно регистрироваться или платить за 7–Zip.</div>
+              </div>
+              <div class="faq__item">
+                <button class="faq__question text-20-sb">Как создать архив с паролем в 7-Zip?</button>
+                <div class="faq__answer text-18-m">Выберите файлы, которые хотите заархивировать. Щелкните правой кнопкой мыши и выберите пункт "7-Zip" в контекстном меню, а затем пункт "Добавить к архиву". Откроется окно настроек архива. В этом окне в разделе "Шифрование" введите желаемый пароль дважды в соответствующие поля. Нажмите кнопку "ОК". 7-Zip создаст архив с выбранными файлами и защитит его паролем.</div>
+              </div>
+              <div class="faq__item">
+                <button class="faq__question text-20-sb">Какой формат архива лучше использовать?</button>
+                <div class="faq__answer text-18-m">Обычно рекомендуется использовать формат 7z, так как он обеспечивает максимальную степень сжатия. Вы можете выбрать уровень сжатия от "Ультра" до "Быстрый". Чем выше уровень сжатия, тем меньше размер архива, но тем больше времени займет создание архива.</div>
+              </div>
+              <div class="faq__item">
+                <button class="faq__question text-20-sb">Почему 7-Zip не может открыть архивы RAR?</button>
+                <div class="faq__answer text-18-m">7-Zip 9.20 поддерживает только форматы RAR 2/3/4 и не поддерживает архивы RAR5. Но последние версии 7-Zip поддерживают архивы RAR5, поэтому попробуйте обновить программу до нужной версии.</div>
+              </div>
+              <div class="faq__item">
+                <button class="faq__question text-20-sb">Что делать, если архив повреждён?</button>
+                <div class="faq__answer text-18-m">При открытии архива 7-Zip обычно предлагает проверить его целостность. Если появилось уведомление о том, что архив повреждён, попробуйте восстановить повреждённые данные средствами 7-Zip или, если у вас есть резервная копия, восстановите данные из неё.</div>
+              </div>
+            </div>
+            <div class="faq__list faq__list--right">
+              <div class="faq__item">
+                <button class="faq__question text-20-sb">Как создать самораспаковывающийся архив?</button>
+                <div class="faq__answer text-18-m">Выберите файлы, которые хотите заархивировать. Щелкните правой кнопкой мыши и выберите пункт "7-Zip" в контекстном меню, а затем пункт "Добавить к архиву". В окне настроек архива в блоке "Опции" отметьте пункт "Создать SFX-архив" и нажмите кнопку "ОК". Для создания SFX архивов лучше использовать форматы 7z или ZIP.</div>
+              </div>
+              <div class="faq__item">
+                <button class="faq__question text-20-sb">На каких операционных системах<br> работает 7-Zip?</button>
+                <div class="faq__answer text-18-m">Основная платформа – Windows. Также благодаря проекту p7zip, 7-Zip доступен и на POSIX-совместимых системах (Linux, macOS). Однако, в отличие от Windows версии, здесь используется в основном консольный интерфейс. Кроме того, существуют неофициальные порты 7-Zip для других операционных систем, таких как FreeBSD, Amiga, Solaris и AIX. Однако, их поддержка может быть ограниченной.</div>
+              </div>
+              <div class="faq__item">
+                <button class="faq__question text-20-sb">В архивы с какими форматами можно<br> упаковать с помощью 7-Zip?</button>
+                <div class="faq__answer text-18-m">Для упаковывания архива вы можете выбрать следующие форматы: 7z, XZ, BZIP2, GZIP, TAR, ZIP и WIM. Если вы хотите создать SFX-архив, то лучше использовать форматы 7z или ZIP.</div>
+              </div>
+              <div class="faq__item">
+                <button class="faq__question text-20-sb">Какие форматы можно распаковать?</button>
+                <div class="faq__answer text-18-m">С помощью 7-Zip вы можете распаковать архивы с форматами: APFS, AR, ARJ, CAB, CHM, CPIO, CramFS, DMG, EXT, FAT, GPT, HFS, IHEX, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, QCOW2, RAR, RPM, SquashFS, UDF, UEFI, VDI, VHD, VHDX, VMDK, XAR и Z.</div>
+              </div>
+              <div class="faq__item">
+                <button class="faq__question text-20-sb">Какие системные требования для 7-Zip?</button>
+                <div class="faq__answer text-18-m">7-Zip - это довольно легкая программа, и ее системные требования весьма скромны. Она прекрасно работает на большинстве современных компьютеров. Процессор: Практически любой современный процессор, будь то Intel или AMD. Оперативная память: Достаточно 64 МБ оперативной памяти. Свободное дисковое пространство: Требуется всего несколько мегабайт для установки самой программы.</div>
+              </div>
+            </div>
+            <p class="text-20-r faq__form">Остались вопросы? Напишите нам!</p>
+          </div>
+        </section>
+        
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__logo">
+            <img src="./assets/images/header-logo.png" alt="Логотип">
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#about" class="footer__link text-16-b">О программе</a></li>
+              <li class="footer__item"><a href="#support" class="footer__link text-16-b">Поддержка</a></li>
+              <li class="footer__item"><a href="#features" class="footer__link text-16-b">Функции</a></li>
+            </ul>
+          </nav>
+          <div class="footer__contact"><a href="#contact" class="btn text-16-b">Связаться с нами</a></div>
+        </div>
+        <div class="footer__border"></div>
+        <div class="footer__about">
+          <div class="footer__policy">
+            <p class="footer__text text-16-b">Политика конфиденциальности</p>
+          </div>
+          <div class="footer__info">
+            <p class="footer__text text-14-r">
+              Информация предоставляется исключительно в образовательных и информационных целях. Все торговые марки и логотипы, упомянутые на этом сайте, принадлежат владельцу программы Igor Pavlov.
+            </p>
+            <p class="footer__text text-14-r">
+              Официальная страница для скачивания программы: <a target="_blank" href="https://www.7-zip.org" class="footer__link">https://www.7-zip.org/</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+      
+    </div>
+  </body>
+</html>

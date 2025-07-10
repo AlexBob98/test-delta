@@ -1,0 +1,140 @@
+@use "./keyframes.scss";
+@use "./header.scss";
+@use "./buttons.scss";
+@use "./hero.scss";
+@use './benefits.scss';
+@use './crossplatform.scss';
+@use './faq.scss';
+@use './footer.scss';
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+ul,
+li {
+  list-style: none;
+}
+
+:root {
+  --white: #ffffff;
+  --dark: #100f14;
+  --gray-800: #272727;
+  --gray-400: #686d68;
+  --gray-200: #d2d3d2;
+  --primary: #055fe5;
+  --blue-300: #b1cef9;
+  --blue-200: #34a1f9;
+  --blue-100: #1664d2;
+  --loader: #CDDEF9;
+  --blue-transparent-40: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.18) 0%,
+    rgba(130, 175, 242, 0.18) 50%,
+    rgba(5, 95, 229, 0.18) 100%
+  );;
+  --white-transparent-35: rgba(255, 255, 255, 0.35);
+  --primary-transparent-35: rgba(5, 95, 229, 0.35);
+  --primary-transparent-15: rgba(5, 95, 229, 0.15);
+  --blue-transparent-200: hwb(207 20% 2% / 0.25);
+}
+
+$font-family: "Inter", sans-serif;
+
+$line-heights: (
+  20: 20px,
+  22: 22px,
+  24: 24px,
+  32: 32px,
+  36: 36px,
+  40: 40px,
+  58: 58px,
+  104: 104px
+);
+
+$font-weight-bold: bold;
+$letter-spacing: 0;
+
+@mixin text-style(
+  $font-size,
+  $line-height,
+  $font-weight: normal,
+  $letter-spacing: 0
+) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  letter-spacing: $letter-spacing;
+}
+
+h1 {
+  @include text-style(102px, map-get($line-heights, 104), $font-weight: 800, $letter-spacing: 2px);
+}
+
+h2 {
+  @include text-style(50px, map-get($line-heights, 58), $font-weight: 800,);
+}
+
+.text-30-m {
+  @include text-style(30px, map-get($line-heights, 40), $letter-spacing: 1.5px);
+}
+
+.text-28-m {
+  @include text-style(28px, map-get($line-heights, 40), $font-weight: 600, $letter-spacing: 0px);
+}
+
+.text-24-b {
+  @include text-style(
+    24px,
+    map-get($line-heights, 36),
+    $font-weight-bold,
+    $letter-spacing: 0.3px
+  );
+}
+
+.text-26-r {
+  @include text-style(26px, map-get($line-heights, 32), $letter-spacing: 0.9px);
+}
+
+.text-24-m {
+  @include text-style(24px, map-get($line-heights, 32), $font-weight: 500, $letter-spacing:0.8px);
+}
+
+.text-20-b {
+  @include text-style(20px, map-get($line-heights, 24), $font-weight-bold);
+}
+
+.text-20-sb {
+  @include text-style(20px, map-get($line-heights, 24), $font-weight-bold);
+}
+
+.text-20-r {
+  @include text-style(20px, map-get($line-heights, 32));
+}
+
+.text-18-m {
+  @include text-style(18px, map-get($line-heights, 24));
+}
+
+.text-16-b {
+  @include text-style(16px, map-get($line-heights, 22), $font-weight-bold);
+}
+
+.text-16-r {
+  @include text-style(16px, map-get($line-heights, 24));
+}
+
+.text-14-r {
+  @include text-style(14px, map-get($line-heights, 20));
+}
